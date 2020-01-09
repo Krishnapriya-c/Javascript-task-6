@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="loop.js"></script>
+<body>
+	<style>
+		.bgc{
+  opacity: 0.7;
+  filter: alpha(opacity=50);
+}
+.bgc:hover{
+  opacity: 1.0;
+  
+}
+body{
+background-image: url('./images/pic1.jpg');
+}
+	</style>
+	<div class="container-fluid m-0 p-0">
+	<h4 class="text-center text-dark p-3 display-4 jumbotron "> <span class="float-right"><button class="btn btn-primary" onclick="getout()">Logout</button></span> Loop conditions</h4>
+
+</div>
+<div class="container mt-5">
+		<div class="row">
+		<div class="col-lg-4 bgc" style="background-color: #35A08E" >
+			<div class="p-5">
+			<h3 class="text-dark"><strong>Using while loop</strong></h3>
+			<h4 class="text-light"><strong>Multiplication table</strong></h4>
+			<input name="number" type="number" class="form-control mt-3" placeholder="Which table?" id="in1">
+			<button class="btn btn-primary mt-2" onclick="fun1()">Submit</button>
+			<h5 id="result1" class="text-light"></h5>
+		</div>
+		</div>
+		<div class="col-lg-4 bgc" style="background-color: #8CF173">
+			<div class="p-5">
+		<h3 class="text-dark"><strong>Using for loop</strong></h3>
+			<h4 class="text-light"><strong>Factorial of a number</strong></h4>
+			<input name="number" type="number" class="form-control mt-3" placeholder="Enter a number" id="in2">
+			<button class="btn btn-success mt-2" onclick="fun2()">Submit</button>
+			<h5 id="result2" class="text-light"></h5>	
+		</div>
+	</div>
+		<div class="col-lg-4 bgc" style="background-color: #F17B4F">
+			<div class="p-5">
+			<h3 class="text-dark"><strong>Do-while loop</strong></h3>
+			<h4 class="text-light"><strong>Print the numbers</strong></h4>
+			<input name="number" type="number" class="form-control mt-3" placeholder="Enter first number" id="in3" >
+			<input name="number" type="number" class="form-control mt-3" placeholder="Enter second number" id="in4">
+			<button class="btn btn-danger mt-2" onclick="fun3()">Submit</button>
+			<h5 id="result3" class="text-light"></h5>
+		</div>
+	</div>
+	<div class="col-lg-4 bgc" style="background-color: #B873AE">
+			<div class="p-5">
+			<h3 class="text-dark"><strong>For Each loop</strong></h3>
+			<h4 class="text-light"><strong>Welcome message</strong></h4>
+			<input name="text" type="text" class="form-control mt-3" placeholder="Enter your name" id="in5" >
+			<button class="btn btn-danger mt-2" onclick="fun4()">Submit</button>
+			<h5 id="result4" class="text-light"></h5>
+		</div>
+	</div>
+   <div class="col-lg-4 bgc" style="background-color: #F8F979">
+        <div class="p-5">
+			<h3 class="text-dark"><strong>For in loop</strong></h3>
+			<h4 class="text-warning"><strong>Information</strong></h4>
+			<input name="text" type="text" class="form-control mt-3" placeholder="Enter your first name" id="in6" >
+			<input name="text" type="text" class="form-control mt-3" placeholder="Enter your last name" id="in7" >
+			<button class="btn btn-warning mt-2" onclick="fun5()">Submit</button>
+			<h5 id="result5" class="text-warning"></h5>
+		</div>
+	</div>
+
+	</div>
+</div>
+</body>
+</html>

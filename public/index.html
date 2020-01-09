@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+		<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="main.js"></script>
+</head>
+<body>
+	<style>
+		body{
+background-image: url('./images/img1.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+		.av {
+  width: 40%;
+  border-radius: 50%;
+}
+.bgc{
+  opacity: 0.6;
+  filter: alpha(opacity=50);
+}
+.bgc:hover{
+  opacity: 1.0;
+  filter: alpha(opacity=50);
+	</style>
+<div class="container mt-5">
+
+	<div class="row">
+		<div class="col-lg-4 col-md-2"></div>
+		<div class="col-lg-4 col-md-8">
+			<div class="bgc" style= "background-color: #3ADF4E">
+			<h3 class="text-center text-light">Login Form</h3>
+	
+		<img src="./images/avatar.png" class="av mx-auto d-block mt-3">
+		<br>
+    <form >
+      <div class='form-group'>
+     <label for="usr" class="text-light mt-1" ><b>&nbsp Name:</b></label>
+      <input type="text" class="form-control trxt" id="usr" placeholder="Enter your name" required> 
+      </div>
+      <div class='form-group'>
+      <label for="pwd"  class="text-light mt-1"><b> &nbsp Password:</b></label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" required>  
+    </div>
+    <div class='form-group'>
+      <label for="pwd"  class="text-light mt-1"><b> &nbsp Confirm Password:</b></label>
+      <input type="password" class="form-control" id="pwd1" placeholder="confirm your password" required>
+    </div>
+      <button type="submit" class="btn btn-danger mx-auto d-block p-2 mt-2" id='but' onclick="return fun1()">Submit</button> 
+      </form>
+  </div>
+</div>
+  <div class="col-lg-4 col-md-2"></div>
+</div>
+</div>
+</body>
+</html>
